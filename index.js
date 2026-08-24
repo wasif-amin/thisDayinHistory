@@ -5,7 +5,7 @@ import axios from "axios";
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.render("index.ejs", { fact: null });
@@ -24,9 +24,9 @@ app.post("/submit", async (req, res) => {
     const randomIndex = Math.floor(Math.random() * events.length);
     const randomEvent = events[randomIndex];
     res.render("index.ejs", {
-      fact: randomEvent.description, 
+      fact: randomEvent.description,
       date: response.data.date,
-      year: randomEvent.year, 
+      year: randomEvent.year,
     });
   } catch (error) {
     console.error("Error fetching or processing data:", error);
