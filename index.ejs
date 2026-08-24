@@ -3,16 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This day in history</title>
+    <title>fact on a date</title>
   </head>
   <body>
-    <img
-      src="https://dualcreditathome.com/wp-content/uploads/2014/02/history.jpg"
-      height="200px"
-      width="200px"
-    />
-    <h1>This day in history!</h1>
-    <h2>Enter a date below:</h2>
     <form action="/submit" method="POST">
       <label for="street">Month:</label>
       <input type="text" name="month" required />
@@ -21,8 +14,8 @@
       <input type="submit" value="Submit" />
     </form>
     <% if (locals.fact) { %>
-
-    <h3>On <%= date %>, in the year <%= year %>:</h3>
+    <hr />
+    <h2>On <%= date %>, in the year <%= year %>:</h2>
     <p><%= fact %></p>
     <% } %>
   </body>
