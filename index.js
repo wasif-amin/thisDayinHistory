@@ -5,18 +5,16 @@ import axios from "axios";
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.render("index.ejs", { fact: null });
 });
 
 app.post("/submit", async (req, res) => {
-  // Use optional chaining so it doesn't crash if req.body is undefined
   const month = req.body?.month;
   const day = req.body?.day;
 
-  // Guard clause: if someone visits /submit directly via GET or empty body
   if (!month || !day) {
     return res.render("index.ejs", {
       fact: "Please enter a valid month and day using the form.",
