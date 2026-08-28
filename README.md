@@ -1,4 +1,4 @@
-Project: This Day in History:[ [Demo](https://thisdayinhistory.onrender.com/)]
+Project: This Day in History:[ [Demo](https://thisdayinhistory.onrender.com/)] (plwaw allow1-2 minurws for server to load)
 
 Description: takes user inputted month and date to use byabbe API  to fetch historical event occurring on inputted date from a random year in history.
 
