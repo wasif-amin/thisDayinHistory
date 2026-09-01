@@ -1,4 +1,4 @@
-Project: This Day in History:[ [Demo](https://thisdayinhistory.onrender.com/)] **please allow 1-2 minutes for server to load**
+Project: This Day in History:[ [LiveDemo](https://thisdayinhistory.onrender.com/)] (**please allow 1-2 minutes for server to load**) [Video Demo](https://www.loom.com/share/bbb428fa15b3456aa959d08951eff1f8)
 
 Description: takes user inputted month and date to use byabbe API  to fetch historical event occurring on inputted date from a random year in history.
 
